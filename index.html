@@ -43,6 +43,12 @@
             </div><!-- pokemon-box -->
 
         </div><!-- pokemon-boxes -->
+
+        <script>
+            fetch('https://pokeapi.co/api/v2/pokemon?limit=10')
+            .then(response => response.json())
+            .then(aLLpokemon => console.log(aLLpokemon))
+        </script>
     </div>
 </body>
 </html>
